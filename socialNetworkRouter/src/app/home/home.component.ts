@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   friends: User[];
+  query: String = '';
   constructor(private userServices: UserService) {
     this.friends = this.userServices.getFriends();
   }
